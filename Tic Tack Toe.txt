@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<button id="button1 type="button" onclick="changeButton()"><img id="x" src="x.bmp" alt="Error"></button>
+<script>
+	function changeButton(){
+		$("#x").attr("src","o.bmp");
+	}
+</script>
+	
+	
+</body>
+</html>

@@ -25,18 +25,28 @@
 
 <script>
     var isX=true;
-    
-	function changeButton(a){
-		if(isX){
-        $("#pic"+a).attr("src","x.bmp");
-            isX=false;
-        }
-        else{
-        $("#pic"+a).attr("src","o.bmp");
-            isX=true;
-        }
+    var square = newArray();
+	for(var i=0;i<9;i++){
+	square[i]=0;
 	}
-    function checkWIn(){
+	alert(square[1]);
+	function changeButton(a){
+	    
+		if(square[a]=0){	
+			if(isX){
+			$("#pic"+a).attr("src","x.bmp");
+				isX=false;
+				square[a]=1;
+			}
+			else{
+			$("#pic"+a).attr("src","o.bmp");
+				isX=true;
+				square[a]=2;
+			}
+				checkWin();
+		}
+	}
+    function checkWin(){
     
     }
         

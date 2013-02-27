@@ -6,25 +6,40 @@
 <body>
 <table border="0">
 <tr>
-<th><button type="button"></button></th>
-<th><button type="button"></button></th>
+<th><button type="button" id="button1" onclick="changeButton(1)"><img id="pic1" src="blank.bmp" alt="Error"></button></th>
+<th><button type="button" id="button2" onclick="changeButton(2)"><img id="pic2" src="blank.bmp" alt="Error"></button></th>
+<th><button type="button" id="button3" onclick="changeButton(3)"><img id="pic3" src="blank.bmp" alt="Error"></button></th>
 </tr>
 <tr>
-<td><button type="button"</button></td>
-<td><button type="button"</button></td>
+<th><button type="button" id="button4" onclick="changeButton(4)"><img id="pic4" src="blank.bmp" alt="Error"></button></th>
+<th><button type="button" id="button5" onclick="changeButton(5)"><img id="pic5" src="blank.bmp" alt="Error"></button></th>
+<th><button type="button" id="button6" onclick="changeButton(6)"><img id="pic6" src="blank.bmp" alt="Error"></button></th>
 </tr>
 <tr>
-<td><button type="button"</button></td>
-<td><button type="button"</button></td>
+<th><button type="button" id="button7" onclick="changeButton(7)"><img id="pic7" src="blank.bmp" alt="Error"></button></th>
+<th><button type="button" id="button8" onclick="changeButton(8)"><img id="pic8" src="blank.bmp" alt="Error"></button></th>
+<th><button type="button" id="button9" onclick="changeButton(9)"><img id="pic9" src="blank.bmp" alt="Error"></button></th>
+
 </tr>
 </table> 
 
-<button id="button1 type="button" onclick="changeButton()"><img id="x" src="blank.bmp" alt="Error"></button>
 <script>
-	function changeButton(){
-		$("#x").attr("src","o.bmp");
+    var isX=true;
+    
+	function changeButton(a){
+		if(isX){
+        $("#pic"+a).attr("src","x.bmp");
+            isX=false;
+        }
+        else{
+        $("#pic"+a).attr("src","o.bmp");
+            isX=true;
+        }
 	}
-	//lol
+    function checkWIn(){
+    
+    }
+        
 </script>
 	
 	
